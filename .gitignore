@@ -1,0 +1,63 @@
+# ──────────────────────────────────────────
+# Python / Backend
+# ──────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+
+# ──────────────────────────────────────────
+# Environment & Secrets
+# ──────────────────────────────────────────
+.env
+
+
+# ──────────────────────────────────────────
+# Node / Frontend (Vite + React)
+# ──────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+.vite/
+frontend/.vite/
+
+# ──────────────────────────────────────────
+# Generated / Large data files
+# ──────────────────────────────────────────
+backend/police_map.html
+
+
+# ──────────────────────────────────────────
+# OS / Editor
+# ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ──────────────────────────────────────────
+# Logs & Temp
+# ──────────────────────────────────────────
+*.log
+*.tmp
+*.bak

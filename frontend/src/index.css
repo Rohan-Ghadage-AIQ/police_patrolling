@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+
+:root {
+  --bg-color: #f0f4f8;
+  --panel-bg: rgba(255, 255, 255, 0.95);
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --border: #e2e8f0;
+  --ward-line: #ef4444;
+  --success-bg: #dcfce7;
+  --success-text: #166534;
+  --success-border: #bbf7d0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ═══════════════════════ LAYOUT ═══════════════════════ */
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* ═══════════════════════ SIDEBAR ═══════════════════════ */
+
+.sidebar {
+  width: 360px;
+  min-width: 360px;
+  background: var(--panel-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  box-shadow: 4px 0 30px rgba(0, 0, 0, 0.04);
+}
+
+.sidebar-header {
+  padding: 28px 24px 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-bottom: 1px solid var(--border);
+}
+
+.sidebar-header h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.3px;
+  margin-bottom: 4px;
+}
+
+.sidebar-header p {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+/* ═══════════════════════ STATION LIST ═══════════════════════ */
+
+.station-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.station-list::-webkit-scrollbar { width: 5px; }
+.station-list::-webkit-scrollbar-track { background: transparent; }
+.station-list::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+.station-list::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.ward-group {
+  margin-bottom: 20px;
+}
+
+.ward-header {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--ward-line);
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  background: #fef2f2;
+  border-radius: 6px;
+  border-left: 3px solid var(--ward-line);
+}
+
+.station-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.station-card:hover {
+  transform: translateY(-1px);
+  border-color: #cbd5e1;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}
+
+.station-card.active {
+  border-color: var(--accent);
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  box-shadow: 0 3px 12px rgba(37, 99, 235, 0.12);
+}
+
+.station-card h3 {
+  font-size: 14px;
+  margin-bottom: 2px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.station-card p {
+  font-size: 11px;
+  color: var(--text-secondary);
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-weight: 400;
+}
+
+/* ═══════════════════════ MAP ═══════════════════════ */
+
+.map-container {
+  flex: 1;
+  position: relative;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  background: #e8ecf1;
+}
+
+/* Active marker glow */
+.active-marker {
+  filter: drop-shadow(0 0 10px rgba(37, 99, 235, 0.5))
+          drop-shadow(0 0 4px rgba(37, 99, 235, 0.3));
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* ═══════════════════════ WARD TOOLTIP ═══════════════════════ */
+
+.ward-tooltip {
+  background: rgba(30, 30, 30, 0.9) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 6px 12px !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  font-family: 'Inter', sans-serif !important;
+  letter-spacing: 0.3px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+.ward-tooltip::before {
+  border-top-color: rgba(30, 30, 30, 0.9) !important;
+}
+
+/* ═══════════════════════ CONTROL PANEL ═══════════════════════ */
+
+.control-panel {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  padding: 14px 28px;
+  border-radius: 50px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08),
+              0 2px 8px rgba(0, 0, 0, 0.04);
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translate(-50%, 30px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+/* ═══════════════════════ BUTTONS ═══════════════════════ */
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent), #3b82f6);
+  color: white;
+  border: none;
+  padding: 11px 26px;
+  border-radius: 24px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 3px 10px rgba(37, 99, 235, 0.25);
+  white-space: nowrap;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, var(--accent-hover), #2563eb);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 16px rgba(37, 99, 235, 0.35);
+}
+
+.btn-primary:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.btn-primary:disabled {
+  background: #94a3b8;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/* ═══════════════════════ STATUS BADGE ═══════════════════════ */
+
+.status-badge {
+  background: var(--success-bg);
+  color: var(--success-text);
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid var(--success-border);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+/* ═══════════════════════ SPINNER ═══════════════════════ */
+
+.loading-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 0.8s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ═══════════════════════ ROUTE ARROWS & LABELS ═══════════════════════ */
+
+.route-arrow {
+  color: #1e40af;
+  font-size: 12px;
+  text-shadow: 0 0 3px white, 0 0 5px white;
+  line-height: 1;
+  pointer-events: none;
+  font-weight: 900;
+}
+
+.route-label {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 800;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  text-align: center;
+  pointer-events: none;
+}
+
+.start-label {
+  background: #16a34a;
+  color: white;
+  animation: pulse-start 2s ease-in-out infinite;
+}
+
+.end-label {
+  background: #dc2626;
+  color: white;
+}
+
+@keyframes pulse-start {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(22, 163, 74, 0); }
+}
+
+/* ═══════════════════════ WARD TOOLTIP — override Leaflet default ═══════════════════════ */
+
+/* Kill the default leaflet tooltip box completely */
+.ward-tooltip.leaflet-tooltip {
+  background: #1e293b !important;
+  border: none !important;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25) !important;
+  color: #f8fafc !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  padding: 4px 10px !important;
+  white-space: nowrap !important;
+  pointer-events: none !important;
+}
+
+/* Remove the tooltip arrow/triangle */
+.ward-tooltip.leaflet-tooltip::before {
+  display: none !important;
+}
+
+/* ═══════════════════════ STATS DASHBOARD ═══════════════════════ */
+
+.stats-dashboard {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 16px;
+  padding: 12px 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  backdrop-filter: blur(8px);
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  max-width: calc(100% - 32px);
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+  min-width: 60px;
+}
+
+.stat-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #94a3b8;
+  margin-bottom: 3px;
+  white-space: nowrap;
+}
+
+.stat-value {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f172a;
+  white-space: nowrap;
+}
+
+.stat-value.highlight {
+  color: #2563eb;
+  font-size: 14px;
+}
+
+.stat-value.address {
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.solver-badge {
+  background: #f0fdf4;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 2px 8px;
+  font-size: 11px !important;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 32px;
+  background: #e2e8f0;
+  flex-shrink: 0;
+}
