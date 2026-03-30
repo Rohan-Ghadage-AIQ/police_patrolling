@@ -43,6 +43,8 @@ frontend/.vite/
 # Generated / Large data files
 # ──────────────────────────────────────────
 backend/police_map.html
+backend/mumbai_wards.geojson
+backend/ward_data/India_Wards/
 
 
 # ──────────────────────────────────────────
@@ -61,3 +63,5 @@ Thumbs.db
 *.log
 *.tmp
 *.bak
+
+mumbai-3d-storytelling-5300165c9f5e.json

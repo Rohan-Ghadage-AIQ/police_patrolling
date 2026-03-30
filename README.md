@@ -1,6 +1,6 @@
 # Mumbai Police Patrolling — Route Optimization System
 
-A standalone GIS microservice that maps 91 police stations across Mumbai and generates optimized street-level patrol routes using real ward boundary polygons from official shapefile data.
+A standalone GIS microservice that maps **91 police stations** across Mumbai and generates **optimized street-level patrol routes** within each station's official jurisdiction boundary, using authoritative shapefile data and a configurable solver cascade.
 
 ---
 
@@ -8,13 +8,15 @@ A standalone GIS microservice that maps 91 police stations across Mumbai and gen
 
 | Feature | Description |
 |---|---|
-| **91 Police Stations** | Sourced from official [Mumbai Police Map](https://mumbaipolice.gov.in/Police_map) KML + Krutrim geocoding verification |
-| **228 Real Ward Boundaries** | Extracted from official India Wards shapefile — proper polygon shapes, not approximations |
-| **Configurable Solver Cascade** | Toggle between **Google Route Optimization**, **OR-Tools VRP**, and **OSRM** via `.env` flags |
-| **Directional Route Arrows** | Patrol routes display `▶` direction markers and **START**/​**END** labels for navigation |
-| **Ward Hover Highlighting** | Hover over any ward to see it highlighted in yellow with its name |
-| **Street-Level Routing** | Routes follow real drivable roads — not straight lines |
-| **Distance & Duration** | Each route reports total patrol distance (km) and estimated time (min) |
+| **91 Police Stations** | Point locations from authoritative `Point_Police_stations.shp` |
+| **91 Jurisdiction Boundaries** | Official polygons from `Police_station_jurdition.shp` — one per station |
+| **Territory-Enforced Routing** | Waypoints generated strictly inside each station's own jurisdiction |
+| **Auto-Scaled Coverage** | Spacing auto-adjusts by area (~20 waypoints/station, feasible 30–60 min patrols) |
+| **Configurable Solver Cascade** | Toggle between **Google Route Optimization**, **OR-Tools TSP**, and **OSRM** via `.env` flags |
+| **Street-Level Routing** | Routes follow real drivable roads via OSRM Route API |
+| **Directional Route Arrows** | `▶` direction markers every 250 m + **START** / **END** labels |
+| **Live Stats Dashboard** | Distance, estimated time, average speed, solver used, waypoint count |
+| **Interactive Map** | Click station pins or sidebar cards, hover jurisdictions for highlight |
 
 ---
 
@@ -22,27 +24,28 @@ A standalone GIS microservice that maps 91 police stations across Mumbai and gen
 
 | Layer | Technology |
 |---|---|
-| Frontend | React 19 + TypeScript, Vite, React-Leaflet |
-| Backend | Python, FastAPI, Pandas, GeoPandas, Shapely |
-| Solvers | OSRM (default), Google Fleet Routing, OR-Tools VRP |
-| Geocoding | Krutrim / Ola Maps API (verification) |
+| Frontend | React 19 + TypeScript, Vite 8, React-Leaflet 5, Axios |
+| Backend | Python 3.10+, FastAPI, GeoPandas, Shapely, Pydantic |
+| Solvers | Google Cloud Fleet Routing (OAuth2), OR-Tools VRP, OSRM |
 | Map Tiles | CartoDB Light Basemap |
-| Data Sources | Mumbai Police KML + India Wards Shapefile |
+| Typography | Inter (Google Fonts) |
+| Data | `Point_Police_stations.shp` + `Police_station_jurdition.shp` |
 
 ---
 
 ## Quick Start
 
 ### Prerequisites
-- **Node.js** ≥ 18, **npm**
-- **Python** ≥ 3.10 with `pip`
-- Internet connection (for OSRM API and map tiles)
+
+- **Node.js** ≥ 18 with **npm**
+- **Python** ≥ 3.10 with **pip**
+- Internet connection (for OSRM public API and map tiles)
 
 ### 1. Backend
 
 ```bash
-cd police_patrolling/backend
-pip install fastapi uvicorn pandas requests geopandas shapely python-dotenv ortools
+cd backend
+pip install fastapi uvicorn requests geopandas shapely python-dotenv ortools pydantic httpx google-auth
 python main.py
 ```
 
@@ -51,42 +54,37 @@ API starts at **http://localhost:8001**
 ### 2. Frontend
 
 ```bash
-cd police_patrolling/frontend
+cd frontend
 npm install
 npm run dev
 ```
 
 UI opens at **http://localhost:5173**
 
-### 3. Verify/Fix Station Coordinates
-
-```bash
-cd police_patrolling/backend
-python verify_stations.py
-```
-
-Uses Krutrim geocoding with strict Mumbai-bounds filtering to validate all 91 stations.
-
 ---
 
-## Environment Configuration (`.env`)
+## Environment Configuration
+
+Create `backend/.env` with the following keys:
 
 ```env
-# Solver Toggle (priority: Google → VRP → OSRM → Fallback)
-USE_GOOGLE_OPTIMIZATION=false
+# ── Solver Toggle (priority: Google → VRP → OSRM → Fallback) ──
+USE_GOOGLE_OPTIMIZATION=true
 USE_VRP_SOLVER=false
-USE_OSRM=true
+USE_OSRM=false
 
-# Google Route Optimization
-GOOGLE_MAPS_API_KEY=...
-GOOGLE_PROJECT_ID=...
-GOOGLE_SERVICE_ACCOUNT_JSON=...
+# ── Google Route Optimization (required if USE_GOOGLE_OPTIMIZATION=true) ──
+GOOGLE_MAPS_API_KEY=<your-key>
+GOOGLE_PROJECT_ID=<your-project-id>
+GOOGLE_SERVICE_ACCOUNT_JSON=<service-account-file.json>
 
-# Krutrim / Ola Maps Geocoding
-KRUTRIM_API_KEY=...
-KRUTRIM_PROJECT_ID=...
+# ── Krutrim / Ola Maps Geocoding (optional, not used in current module) ──
+KRUTRIM_API_KEY=<your-key>
+KRUTRIM_PROJECT_ID=<your-project-id>
 USE_KRUTRIM_GEOCODING=true
 ```
+
+> **Note:** If no solvers are enabled, the system falls back to direct waypoint-to-waypoint connections (straight lines).
 
 ---
 
@@ -95,8 +93,8 @@ USE_KRUTRIM_GEOCODING=true
 | Method | Endpoint | Description |
 |---|---|---|
 | `GET` | `/` | Health check + active solver status |
-| `GET` | `/api/stations` | All 91 stations with real ward assignments |
-| `GET` | `/api/wards` | 228 Mumbai ward polygons as GeoJSON |
+| `GET` | `/api/stations` | All 91 stations with jurisdiction assignments |
+| `GET` | `/api/wards` | 91 jurisdiction polygons as GeoJSON FeatureCollection |
 | `POST` | `/api/generate-patrol-route` | Generate optimized patrol route for a station |
 
 ### Example: Generate Patrol Route
@@ -105,21 +103,21 @@ USE_KRUTRIM_GEOCODING=true
 // POST /api/generate-patrol-route
 {
   "station_name": "Chunabhatti PS",
-  "lat": 19.056555,
-  "lng": 72.872699
+  "lat": 19.0547,
+  "lng": 72.8791
 }
 
 // Response
 {
   "status": "success",
   "station": "Chunabhatti PS",
-  "ward": "Ward No 179",
-  "ward_geojson": { /* polygon */ },
+  "ward": "Chunabhatti Police Station",
+  "ward_geojson": { /* jurisdiction polygon */ },
   "route_geometry": [[19.056, 72.872], ...],
-  "waypoint_count": 12,
-  "distance_km": 8.4,
-  "duration_min": 16.8,
-  "solver_used": "osrm"
+  "waypoint_count": 20,
+  "distance_km": 18.9,
+  "duration_min": 86,
+  "solver_used": "google"
 }
 ```
 
@@ -130,23 +128,53 @@ USE_KRUTRIM_GEOCODING=true
 ```
 police_patrolling/
 ├── backend/
-│   ├── main.py                    # FastAPI server + solver cascade
-│   ├── ward_processor.py          # Shapefile → ward assignment + grid waypoints
-│   ├── verify_stations.py         # KML re-extraction + Krutrim verification
-│   ├── generate_police_data.py    # KML→CSV extraction
-│   ├── police_google_solver.py    # Google Fleet Routing adapter
-│   ├── police_vrp_solver.py       # OR-Tools TSP adapter
-│   ├── mumbai_police_stations.csv # 91 verified stations
-│   ├── mumbai_wards.geojson       # 228 ward polygons (cached)
-│   ├── ward_data/India_Wards/     # Source shapefile
-│   └── .env                       # Solver + API configuration
+│   ├── main.py                       # FastAPI server, solver cascade, OSRM helpers
+│   ├── ward_processor.py             # Shapefile loading, fuzzy jurisdiction lookup, waypoint grid
+│   ├── police_google_solver.py       # Google Cloud Fleet Routing adapter (OAuth2)
+│   ├── police_vrp_solver.py          # OR-Tools TSP adapter (Haversine distance matrix)
+│   ├── police_route_solver.py        # (Legacy) Maintenance team planning router — not active
+│   ├── generate_police_data.py       # One-off KML → CSV station extractor script
+│   ├── verify_stations.py            # Geocoding verification utility
+│   ├── scraper_test.py               # Scraper test utility
+│   ├── ward_data/
+│   │   ├── Point_Police_stations.*   # 91 station point locations (SHP + sidecar files)
+│   │   └── Police_station_jurdition.*# 91 jurisdiction polygons (SHP + sidecar files)
+│   ├── *.kml                         # Source KML files (Point + Jurisdiction)
+│   ├── mumbai_police_stations.csv    # Generated CSV from KML extraction
+│   ├── *.json                        # Google service account credentials
+│   └── .env                          # Solver + API configuration
 │
-├── frontend/src/
-│   ├── App.tsx                    # Dashboard + ward grouping + solver badge
-│   ├── PatrolMap.tsx              # Map with arrows, labels, ward overlays
-│   ├── index.css                  # Premium light-mode styling
-│   └── main.tsx                   # Entry point
+├── frontend/
+│   ├── src/
+│   │   ├── App.tsx                   # Dashboard layout, sidebar, control bar, stats dashboard
+│   │   ├── PatrolMap.tsx             # Leaflet map: markers, ward overlays, route, arrows, labels
+│   │   ├── index.css                 # Full design system (Inter font, glassmorphism, animations)
+│   │   ├── App.css                   # Vite boilerplate styles (unused)
+│   │   └── main.tsx                  # React entry point
+│   ├── index.html                    # HTML shell
+│   ├── package.json                  # Dependencies (React 19, Leaflet, Axios, Vite 8)
+│   ├── vite.config.ts                # Vite configuration
+│   └── tsconfig*.json                # TypeScript configuration
 │
-├── ARCHITECTURE.md
-└── README.md
+├── .gitignore
+├── ARCHITECTURE.md                   # Detailed system architecture document
+└── README.md                         # This file
 ```
+
+---
+
+## Frontend UI Components
+
+| Component | What it shows |
+|---|---|
+| **Sidebar** | Jurisdiction-grouped station list, clickable cards with coordinates |
+| **Map** | 91 station pins (blue default / red active), 91 jurisdiction polygons (red borders, yellow hover) |
+| **Control Bar** | Active station name + ward, "Generate Patrol Route" button |
+| **Stats Dashboard** | Station, Ward, Distance (km), Est. Time, Avg Speed (km/h), Solver, Waypoints, Coordinates |
+| **Route Overlay** | Blue polyline with dark shadow, bearing-rotated `▶` arrows, pulsing START + END labels |
+
+---
+
+## License
+
+Internal use — Mumbai Police / AIQ project.

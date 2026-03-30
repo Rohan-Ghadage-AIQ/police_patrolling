@@ -1,0 +1,3591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Point_Police_Station</name>
+    <Style id="icon-1899-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>Dindoshi PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1279<br>location_placename_name: Shivaji Nagar<br>gid: 1<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1279</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Shivaji Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>1</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.877312,19.171569,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sion PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1303<br>location_placename_name: Sion Hospital Colony<br>gid: 2<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1303</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Sion Hospital Colony</value>
+        </Data>
+        <Data name="gid">
+          <value>2</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.861748,19.037868,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Shivaji Park PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1174<br>location_placename_name: Kelkarwadi<br>gid: 3<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1174</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Kelkarwadi</value>
+        </Data>
+        <Data name="gid">
+          <value>3</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.840468,19.02306,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Dharavi PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1017<br>location_placename_name: Kamla Nehru Nagar<br>gid: 4<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1017</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Kamla Nehru Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>4</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.854904,19.042069,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Parksite PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 661<br>location_placename_name: Ramwadi<br>gid: 5<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>661</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Ramwadi</value>
+        </Data>
+        <Data name="gid">
+          <value>5</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.924156,19.117538,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mankhurd PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 334<br>location_placename_name: Lallubhai Compound<br>gid: 6<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>334</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Lallubhai Compound</value>
+        </Data>
+        <Data name="gid">
+          <value>6</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.926301,19.052789,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Govandi PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 521<br>location_placename_name: Deonar Village<br>gid: 7<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>521</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Deonar Village</value>
+        </Data>
+        <Data name="gid">
+          <value>7</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.917794,19.04824,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Kandivali PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 210<br>location_placename_name: Kandivali Police Line<br>gid: 8<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>210</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Kandivali Police Line</value>
+        </Data>
+        <Data name="gid">
+          <value>8</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.850452,19.209726,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MHB Colony PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1124<br>location_placename_name: Ashok Nagar<br>gid: 9<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1124</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Ashok Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>9</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.840419,19.232248,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Aarey Sub PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1541<br>location_placename_name: Jay Prakash Nagar<br>gid: 10<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1541</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Jay Prakash Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>10</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.871557,19.162814,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Nehru Nagar PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1334<br>location_placename_name: Shiv Shakti Nagar<br>gid: 11<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1334</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Shiv Shakti Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>11</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.880325,19.058945,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bhoiwada PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 955<br>location_placename_name: Bhoiwada<br>gid: 12<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>955</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Bhoiwada</value>
+        </Data>
+        <Data name="gid">
+          <value>12</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.843998,19.00666,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Goregaon PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 405<br>location_placename_name: Mig Colony<br>gid: 13<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>405</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Mig Colony</value>
+        </Data>
+        <Data name="gid">
+          <value>13</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.845547,19.157354,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bandra PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 635<br>location_placename_name: Santhosh Nagar<br>gid: 14<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>635</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Santhosh Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>14</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.835819,19.055855,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MRA Marg PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1512<br>location_placename_name: Fort<br>gid: 15<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1512</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Fort</value>
+        </Data>
+        <Data name="gid">
+          <value>15</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.835241,18.945938,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Borivali PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 599<br>location_placename_name: Borivali<br>gid: 16<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>599</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Borivali</value>
+        </Data>
+        <Data name="gid">
+          <value>16</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.841403,19.22591,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Kasturba PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1451<br>location_placename_name: Chinchpada<br>gid: 17<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1451</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Chinchpada</value>
+        </Data>
+        <Data name="gid">
+          <value>17</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.857895,19.22814,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Kurar PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 727<br>location_placename_name: Ambewadi<br>gid: 18<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>727</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Ambewadi</value>
+        </Data>
+        <Data name="gid">
+          <value>18</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.859319,19.18552,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cuffe Parade PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 649<br>location_placename_name: Cuffe Parade<br>gid: 19<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>649</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Cuffe Parade</value>
+        </Data>
+        <Data name="gid">
+          <value>19</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.818779,18.911914,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JJ Marg PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 871<br>location_placename_name: Jj Hospital And College Campus<br>gid: 20<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>871</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Jj Hospital And College Campus</value>
+        </Data>
+        <Data name="gid">
+          <value>20</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.832244,18.96282,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DB Marg PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1587<br>location_placename_name: Grant Road<br>gid: 21<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1587</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Grant Road</value>
+        </Data>
+        <Data name="gid">
+          <value>21</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.817039,18.96079,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Yellow Gate PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1503<br>location_placename_name: Masjid Bandar<br>gid: 22<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1503</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Masjid Bandar</value>
+        </Data>
+        <Data name="gid">
+          <value>22</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.841358,18.947151,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Marine Drive PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1581<br>location_placename_name: Churchgate<br>gid: 23<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1581</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Churchgate</value>
+        </Data>
+        <Data name="gid">
+          <value>23</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.824783,18.929958,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Tardeo PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1132<br>location_placename_name: Ratan Tata Colony<br>gid: 24<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1132</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Ratan Tata Colony</value>
+        </Data>
+        <Data name="gid">
+          <value>24</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.818848,18.978861,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Chembur PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1424<br>location_placename_name: Sindhi Society<br>gid: 25<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1424</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Sindhi Society</value>
+        </Data>
+        <Data name="gid">
+          <value>25</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.893767,19.051556,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Chunabhatti PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1294<br>location_placename_name: Tadwadi<br>gid: 26<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1294</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Tadwadi</value>
+        </Data>
+        <Data name="gid">
+          <value>26</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.8791,19.054719,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Tilak Nagar PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 27<br>location_placename_name: Indira Nagar<br>gid: 27<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>27</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Indira Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>27</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.895889,19.065224,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Malad PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 904<br>location_placename_name: Somwari Bazar<br>gid: 28<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>904</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Somwari Bazar</value>
+        </Data>
+        <Data name="gid">
+          <value>28</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.844739,19.183603,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Amboli PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 996<br>location_placename_name: Prabhat Nagar<br>gid: 29<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>996</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Prabhat Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>29</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.848311,19.142503,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Wadala PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1375<br>location_placename_name: Nandkarni Park<br>gid: 30<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1375</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Nandkarni Park</value>
+        </Data>
+        <Data name="gid">
+          <value>30</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.863693,19.015272,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mahim PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1496<br>location_placename_name: Mahim<br>gid: 31<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1496</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Mahim</value>
+        </Data>
+        <Data name="gid">
+          <value>31</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.839069,19.0422,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Shahu Nagar PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1<br>location_placename_name: Dharavi<br>gid: 32<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Dharavi</value>
+        </Data>
+        <Data name="gid">
+          <value>32</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.852615,19.037129,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Charkop PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 465<br>location_placename_name: Sector 2 Charkop<br>gid: 33<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>465</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Sector 2 Charkop</value>
+        </Data>
+        <Data name="gid">
+          <value>33</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.820613,19.214632,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Santacruz PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1301<br>location_placename_name: Hasmukh Nagar<br>gid: 34<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1301</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Hasmukh Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>34</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.834843,19.084223,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bhandup PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 434<br>location_placename_name: Govind Nagar<br>gid: 35<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>434</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Govind Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>35</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.936424,19.151262,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Varsova PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1201<br>location_placename_name: Ratan Kunj<br>gid: 36<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1201</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Ratan Kunj</value>
+        </Data>
+        <Data name="gid">
+          <value>36</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.81509,19.137704,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Kurla PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 961<br>location_placename_name: Jagruti Nagar<br>gid: 37<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>961</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Jagruti Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>37</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.876236,19.0648,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Gorai PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 728<br>location_placename_name: Gorai 2<br>gid: 38<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>728</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Gorai 2</value>
+        </Data>
+        <Data name="gid">
+          <value>38</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.782564,19.237608,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Navghar PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 296<br>location_placename_name: Hanuman Chowk<br>gid: 39<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>296</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Hanuman Chowk</value>
+        </Data>
+        <Data name="gid">
+          <value>39</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.968369,19.169038,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LT Marg PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 438<br>location_placename_name: Tak Wadi<br>gid: 40<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>438</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Tak Wadi</value>
+        </Data>
+        <Data name="gid">
+          <value>40</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.830346,18.945336,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Antop Hill PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 711<br>location_placename_name: Cgs Colony Sector 4<br>gid: 41<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>711</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Cgs Colony Sector 4</value>
+        </Data>
+        <Data name="gid">
+          <value>41</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.864815,19.030468,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Dongri PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 918<br>location_placename_name: Dongri<br>gid: 42<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>918</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Dongri</value>
+        </Data>
+        <Data name="gid">
+          <value>42</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.83902,18.962186,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Byculla PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 682<br>location_placename_name: Mustafa Bazar<br>gid: 43<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>682</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Mustafa Bazar</value>
+        </Data>
+        <Data name="gid">
+          <value>43</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.834004,18.973606,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Dadar PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 787<br>location_placename_name: Lokmanya Tilak Colony<br>gid: 44<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>787</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Lokmanya Tilak Colony</value>
+        </Data>
+        <Data name="gid">
+          <value>44</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.835431,19.014996,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Malwani PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 668<br>location_placename_name: Malvani<br>gid: 45<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>668</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Malvani</value>
+        </Data>
+        <Data name="gid">
+          <value>45</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.822098,19.192107,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Azad Maidan PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 48<br>location_placename_name: Azad Maidan<br>gid: 46<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>48</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Azad Maidan</value>
+        </Data>
+        <Data name="gid">
+          <value>46</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.83351,18.941706,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Nagpada PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 681<br>location_placename_name: Mumbai Central<br>gid: 47<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>681</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Mumbai Central</value>
+        </Data>
+        <Data name="gid">
+          <value>47</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.829575,18.967087,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Gamdevi PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 15<br>location_placename_name: Gamdevi<br>gid: 48<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>15</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Gamdevi</value>
+        </Data>
+        <Data name="gid">
+          <value>48</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.809116,18.966757,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NM Joshi PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 609<br>location_placename_name: Lower Parel<br>gid: 49<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>609</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Lower Parel</value>
+        </Data>
+        <Data name="gid">
+          <value>49</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.830948,18.991383,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Deonar PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 709<br>location_placename_name: Deonar<br>gid: 50<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>709</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Deonar</value>
+        </Data>
+        <Data name="gid">
+          <value>50</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.917442,19.0583,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Agripada PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 398<br>location_placename_name: Rto Colony<br>gid: 51<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>398</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Rto Colony</value>
+        </Data>
+        <Data name="gid">
+          <value>51</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.824207,18.976595,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Dahisar PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 475<br>location_placename_name: Yadav Nagar<br>gid: 52<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>475</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Yadav Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>52</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.864285,19.252693,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ghatkopar PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 272<br>location_placename_name: Chirag Nagar<br>gid: 53<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>272</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Chirag Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>53</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.899796,19.087666,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bandra Kurla Complex PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 911<br>location_placename_name: Bharam Nagar<br>gid: 54<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>911</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Bharam Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>54</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.860245,19.06457,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Airport PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 627<br>location_placename_name: Santacruz East<br>gid: 55<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>627</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Santacruz East</value>
+        </Data>
+        <Data name="gid">
+          <value>55</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.857075,19.094629,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DN Nagar PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 848<br>location_placename_name: Shiv Nagar<br>gid: 56<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>848</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Shiv Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>56</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.829764,19.122187,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sahar PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 912<br>location_placename_name: Sahar Village<br>gid: 57<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>912</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Sahar Village</value>
+        </Data>
+        <Data name="gid">
+          <value>57</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.875252,19.098885,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Khar PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 870<br>location_placename_name: Ram Krishna Nagar<br>gid: 58<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>870</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Ram Krishna Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>58</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.837791,19.072868,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Paidhuni PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 41<br>location_placename_name: Mumbadevi Area<br>gid: 59<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>41</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Mumbadevi Area</value>
+        </Data>
+        <Data name="gid">
+          <value>59</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.832012,18.954189,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Vanrai PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 902<br>location_placename_name: Sant Rohidas Nagar<br>gid: 60<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>902</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Sant Rohidas Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>60</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.857708,19.155806,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Samta Nagar PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 694<br>location_placename_name: Samata Nagar<br>gid: 61<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>694</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Samata Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>61</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.861482,19.199956,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Kalachowkey PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1446<br>location_placename_name: Chatai Chawl<br>gid: 62<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1446</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Chatai Chawl</value>
+        </Data>
+        <Data name="gid">
+          <value>62</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.84227,18.987818,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sewree PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 109<br>location_placename_name: Sewri<br>gid: 63<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>109</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Sewri</value>
+        </Data>
+        <Data name="gid">
+          <value>63</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.849223,18.977729,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Colaba PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1276<br>location_placename_name: Police Colony<br>gid: 64<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1276</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Police Colony</value>
+        </Data>
+        <Data name="gid">
+          <value>64</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.831116,18.922348,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Worli PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1413<br>location_placename_name: Worli Shivaji Nagar<br>gid: 65<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1413</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Worli Shivaji Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>65</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.817383,19.005187,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RAK PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1120<br>location_placename_name: Azad Nagar<br>gid: 66<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1120</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Azad Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>66</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.849816,19.005017,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Trombay PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 162<br>location_placename_name: Cheeta Camp  Sector G<br>gid: 67<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>162</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Cheeta Camp  Sector G</value>
+        </Data>
+        <Data name="gid">
+          <value>67</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.945383,19.038263,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Kanjurmarg PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 749<br>location_placename_name: Damle Colony<br>gid: 68<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>749</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Damle Colony</value>
+        </Data>
+        <Data name="gid">
+          <value>68</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.9373,19.129711,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Malbar Hill PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1443<br>location_placename_name: Walkeshwar<br>gid: 69<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1443</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Walkeshwar</value>
+        </Data>
+        <Data name="gid">
+          <value>69</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.799095,18.949434,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>VP Road PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 32<br>location_placename_name: Grand Road Area<br>gid: 70<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>32</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Grand Road Area</value>
+        </Data>
+        <Data name="gid">
+          <value>70</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.823944,18.955713,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RCF PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 326<br>location_placename_name: Azad Nagar<br>gid: 71<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>326</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Azad Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>71</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.895611,19.036835,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Vinoba Bhave Nagar PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 975<br>location_placename_name: Vinobha Bhave Nagar<br>gid: 72<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>975</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Vinobha Bhave Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>72</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.884212,19.071739,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Pant Nagar PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 795<br>location_placename_name: Savitribai Phule Nagar<br>gid: 73<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>795</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Savitribai Phule Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>73</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.916176,19.086893,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Andheri PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1157<br>location_placename_name: Sai Baba Wadi<br>gid: 74<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1157</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Sai Baba Wadi</value>
+        </Data>
+        <Data name="gid">
+          <value>74</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.848179,19.120243,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Kherwadi PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 297<br>location_placename_name: Ambedkar Nagar<br>gid: 75<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>297</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Ambedkar Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>75</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.850357,19.06573,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Nirmal Nagar PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 634<br>location_placename_name: Khar East<br>gid: 76<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>634</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Khar East</value>
+        </Data>
+        <Data name="gid">
+          <value>76</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.844727,19.066006,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Wadala Truck Terminal PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1579<br>location_placename_name: Antop Hill Warehousing Complex<br>gid: 77<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1579</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Antop Hill Warehousing Complex</value>
+        </Data>
+        <Data name="gid">
+          <value>77</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.875011,19.033054,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIDC PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 231<br>location_placename_name: Chakala Industrial Area<br>gid: 78<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>231</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Chakala Industrial Area</value>
+        </Data>
+        <Data name="gid">
+          <value>78</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.868111,19.11764,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Meghwadi PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1129<br>location_placename_name: Income Tax Colony<br>gid: 79<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1129</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Income Tax Colony</value>
+        </Data>
+        <Data name="gid">
+          <value>79</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.861023,19.131544,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Vakola PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1164<br>location_placename_name: Anand Nagar<br>gid: 80<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1164</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Anand Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>80</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.84716,19.080801,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Vileparle PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 626<br>location_placename_name: Vile Parle East<br>gid: 81<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>626</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Vile Parle East</value>
+        </Data>
+        <Data name="gid">
+          <value>81</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.854553,19.096216,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Oshiwara PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 830<br>location_placename_name: Milat Nagar<br>gid: 82<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>830</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Milat Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>82</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.831589,19.147545,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jogeshwari PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1208<br>location_placename_name: Gupha Tekdi<br>gid: 83<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1208</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Gupha Tekdi</value>
+        </Data>
+        <Data name="gid">
+          <value>83</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.85434,19.138078,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sakinaka PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 523<br>location_placename_name: Mhada Colony<br>gid: 84<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>523</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Mhada Colony</value>
+        </Data>
+        <Data name="gid">
+          <value>84</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.895721,19.109966,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Matunga PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1303<br>location_placename_name: Sion Hospital Colony<br>gid: 85<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1303</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Sion Hospital Colony</value>
+        </Data>
+        <Data name="gid">
+          <value>85</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.857796,19.031141,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Shivaji Nagar PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 616<br>location_placename_name: Mankhurd<br>gid: 86<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>616</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Mankhurd</value>
+        </Data>
+        <Data name="gid">
+          <value>86</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.921417,19.061201,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bangur Nagar Police Station</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1220<br>location_placename_name: Mamletdar Wadi<br>gid: 87<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1220</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Mamletdar Wadi</value>
+        </Data>
+        <Data name="gid">
+          <value>87</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.844644,19.183618,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mulund PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 835<br>location_placename_name: Siddharat Nagar<br>gid: 88<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>835</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Siddharat Nagar</value>
+        </Data>
+        <Data name="gid">
+          <value>88</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.951797,19.177345,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Vikhroli PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 716<br>location_placename_name: Kannamwar Nagar Ii<br>gid: 89<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>716</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Kannamwar Nagar Ii</value>
+        </Data>
+        <Data name="gid">
+          <value>89</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.938358,19.121695,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Powai PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 1330<br>location_placename_name: Rambaug<br>gid: 90<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>1330</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Rambaug</value>
+        </Data>
+        <Data name="gid">
+          <value>90</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.899456,19.119686,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Juhu PS</name>
+      <description><![CDATA[description: <br>type: Police Station<br>state: Maharastra<br>district: Mumbai<br>city: Mumbai<br>location_placename_gid: 656<br>location_placename_name: Juhu Tara<br>gid: 91<br>layer_switcher: poi_police_station]]></description>
+      <styleUrl>#icon-1899-DB4436</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="type">
+          <value>Police Station</value>
+        </Data>
+        <Data name="state">
+          <value>Maharastra</value>
+        </Data>
+        <Data name="district">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="city">
+          <value>Mumbai</value>
+        </Data>
+        <Data name="location_placename_gid">
+          <value>656</value>
+        </Data>
+        <Data name="location_placename_name">
+          <value>Juhu Tara</value>
+        </Data>
+        <Data name="gid">
+          <value>91</value>
+        </Data>
+        <Data name="layer_switcher">
+          <value>poi_police_station</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          72.832672,19.103124,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

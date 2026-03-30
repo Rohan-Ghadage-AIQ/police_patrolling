@@ -74,16 +74,18 @@ function getBearing(lat1: number, lng1: number, lat2: number, lng2: number): num
 
 function getArrowPositions(
   route: [number, number][],
-  intervalKm: number = 0.3
+  intervalKm: number = 0.5
 ): { pos: [number, number]; bearing: number }[] {
   if (route.length < 2) return [];
   const arrows: { pos: [number, number]; bearing: number }[] = [];
   let accumulated = 0;
   const intervalDeg = intervalKm / 111;
+  const minSegDeg = 0.0009; // ~100m — skip tiny segments (prevents bidirectional arrow glitch)
   for (let i = 1; i < route.length; i++) {
     const [lat1, lng1] = route[i - 1];
     const [lat2, lng2] = route[i];
     const segDist = Math.sqrt((lat2 - lat1) ** 2 + (lng2 - lng1) ** 2);
+    if (segDist < minSegDeg) continue; // skip micro-segments
     accumulated += segDist;
     if (accumulated >= intervalDeg) {
       arrows.push({
@@ -143,7 +145,7 @@ const PatrolMap = ({ stations, activeStation, patrolData, wardGeoJSON, onSelectS
   const positions: [number, number][] = patrolData?.route_geometry || [];
   const activeWardGeo = patrolData?.ward_geojson;
 
-  const arrows = useMemo(() => getArrowPositions(positions, 0.3), [positions]);
+  const arrows = useMemo(() => getArrowPositions(positions, 0.25), [positions]);
   const routeStart = positions.length > 0 ? positions[0] : null;
   const routeEnd = positions.length > 1 ? positions[positions.length - 1] : null;
 
@@ -166,15 +168,7 @@ const PatrolMap = ({ stations, activeStation, patrolData, wardGeoJSON, onSelectS
           key="all-wards"
           data={wardGeoJSON}
           style={() => wardDefaultStyle}
-          onEachFeature={(feature: any, layer: any) => {
-            if (feature.properties?.ward_name) {
-              layer.bindTooltip(feature.properties.ward_name, {
-                sticky: true,
-                className: 'ward-tooltip',
-                direction: 'top',
-                offset: [0, -8],
-              });
-            }
+          onEachFeature={(_feature: any, layer: any) => {
             layer.on({
               mouseover: (e: any) => {
                 e.target.setStyle(wardHoverStyle);
@@ -219,16 +213,15 @@ const PatrolMap = ({ stations, activeStation, patrolData, wardGeoJSON, onSelectS
           <Marker key={`arrow-${i}`} position={a.pos} icon={createArrowIcon(a.bearing)} interactive={false} />
         ))}
 
-      {/* START label (above the station pin) */}
+      {/* START label */}
       {patrolData && routeStart && (
         <Marker position={routeStart} icon={startIcon} interactive={false} />
       )}
 
-      {/* END label (below the station pin) */}
+      {/* END label */}
       {patrolData && routeEnd && (
         <Marker position={routeEnd} icon={endIcon} interactive={false} />
       )}
-
       {/* All Police Station Markers — CLICKABLE */}
       {stations.map((s: any, idx: number) => {
         const isActive = activeStation?.name === s.name;

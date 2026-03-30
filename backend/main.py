@@ -1,25 +1,29 @@
 """
 Mumbai Police Patrolling — FastAPI Backend
 Configurable solver cascade: Google → VRP (OR-Tools) → OSRM
-Uses real Mumbai ward boundaries from shapefile for patrol waypoint generation.
+Uses authoritative Mumbai shapefiles:
+  - Point_Police_stations.shp       (91 station locations)
+  - Police_station_jurdition.shp    (91 jurisdiction polygons)
 """
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-import pandas as pd
 import os
 import requests as http_requests
 from pydantic import BaseModel
 from typing import Optional
 from dotenv import load_dotenv
 import traceback
+import math
 
 # Load .env from this directory
 load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 
 from ward_processor import (
     find_ward_for_station,
+    find_jurisdiction_for_station,
     generate_ward_waypoints,
     get_all_ward_geojson,
+    get_all_stations,
 )
 
 app = FastAPI(title="Mumbai Police Patrolling Routing API")
@@ -31,8 +35,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-STATIONS_CSV = os.path.join(os.path.dirname(__file__), "mumbai_police_stations.csv")
 
 
 def _solver_enabled(key: str) -> bool:
@@ -56,15 +58,12 @@ def home():
 
 @app.get("/api/stations")
 def get_stations_data():
-    """Return all police stations with their real ward assignment."""
+    """Return all 91 police stations enriched with their own jurisdiction name."""
     try:
-        df = pd.read_csv(STATIONS_CSV)
-        stations = []
-        for _, row in df.iterrows():
-            st = row.to_dict()
-            ward_info = find_ward_for_station(st["lat"], st["lng"])
+        stations = get_all_stations()
+        for st in stations:
+            ward_info = find_jurisdiction_for_station(st["name"], st["lat"], st["lng"])
             st["ward"] = ward_info["ward_name"] if ward_info else "Unknown"
-            stations.append(st)
         return {"status": "success", "data": stations}
     except Exception as e:
         traceback.print_exc()
@@ -98,28 +97,26 @@ def generate_patrol_route(req: PatrolRequest):
     """
     Generate an optimized patrol route for a police station.
 
-    1. Find the station's real ward polygon
-    2. Generate uniform grid waypoints inside that ward
+    1. Find the station's own jurisdiction polygon (territory-enforced)
+    2. Generate grid waypoints inside that polygon
     3. Run solver cascade: Google → VRP → OSRM → Fallback
+    4. Get actual road geometry from OSRM Route API
     """
-    # Step 1: Find ward
-    ward_info = find_ward_for_station(req.lat, req.lng)
+    # ── Step 1: own jurisdiction polygon ──────────────────────────────
+    ward_info = find_jurisdiction_for_station(req.station_name, req.lat, req.lng)
     ward_name = ward_info["ward_name"] if ward_info else "Unknown"
     ward_geojson = ward_info["geojson"] if ward_info else None
 
-    # Step 2: Generate waypoints inside the real ward polygon
+    # ── Step 2: waypoints inside polygon ──────────────────────────────
     if ward_info and ward_info.get("polygon"):
         waypoints = generate_ward_waypoints(
             ward_info["polygon"], spacing_km=req.spacing_km
         )
         print(
-            f"📍 Generated {len(waypoints)} patrol waypoints inside ward '{ward_name}' "
+            f"📍 Generated {len(waypoints)} patrol waypoints inside '{ward_name}' "
             f"(spacing={req.spacing_km}km)"
         )
     else:
-        # Fallback to simple circle if no ward data
-        import math
-
         waypoints = []
         for i in range(8):
             angle = (2 * math.pi * i) / 8
@@ -132,7 +129,7 @@ def generate_patrol_route(req: PatrolRequest):
     if not waypoints:
         return {"status": "error", "message": "No waypoints generated for this ward"}
 
-    # Step 3: Solver cascade
+    # ── Step 3: Solver cascade ────────────────────────────────────────
     result = None
 
     # --- Google Route Optimization ---
@@ -149,7 +146,6 @@ def generate_patrol_route(req: PatrolRequest):
             loop.close()
 
             if google_result.get("success"):
-                # Reorder waypoints based on Google's optimized order
                 visit_order = google_result.get("visit_order", [])
                 if visit_order:
                     ordered = [waypoints[i] for i in visit_order if i < len(waypoints)]
@@ -221,6 +217,9 @@ def generate_patrol_route(req: PatrolRequest):
     return result
 
 
+# ─────────────────────── OSRM Helpers ────────────────────────────────────────
+
+
 def _build_route_with_osrm(req, ordered_waypoints, ward_name, ward_geojson):
     """
     Given an ordered list of waypoints, get actual street geometry from OSRM Route API.
@@ -230,7 +229,7 @@ def _build_route_with_osrm(req, ordered_waypoints, ward_name, ward_geojson):
     osrm_url = f"http://router.project-osrm.org/route/v1/driving/{coords_str}?geometries=geojson&overview=full"
 
     try:
-        resp = http_requests.get(osrm_url, timeout=10)
+        resp = http_requests.get(osrm_url, timeout=30)
         data = resp.json()
         if data.get("code") == "Ok":
             route = data["routes"][0]
@@ -258,7 +257,7 @@ def _solve_with_osrm(req, waypoints, ward_name, ward_geojson):
     osrm_url = f"http://router.project-osrm.org/trip/v1/driving/{coords_str}?roundtrip=true&source=first&geometries=geojson"
 
     try:
-        resp = http_requests.get(osrm_url, timeout=10)
+        resp = http_requests.get(osrm_url, timeout=30)
         data = resp.json()
         if data.get("code") == "Ok":
             trip = data["trips"][0]
@@ -281,5 +280,4 @@ def _solve_with_osrm(req, waypoints, ward_name, ward_geojson):
 
 if __name__ == "__main__":
     import uvicorn
-
     uvicorn.run(app, host="0.0.0.0", port=8001)
